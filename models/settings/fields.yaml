@@ -1,0 +1,24 @@
+tabs:
+    fields:
+        app_id:
+            label: AppID
+            span: left
+            type: text
+            tab: 接口配置
+        secret:
+            label: AppSecret
+            span: left
+            type: text
+            tab: 接口配置
+        open_conversation_id:
+            label: openConversationId
+            span: left
+            type: text
+            tab: 机器人配置
+        robot_code:
+            label: robotCode
+            span: left
+            type: text
+            tab: 机器人配置
+
+

@@ -1,0 +1,5 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 创建机器人模板表
+    - builder_table_create_summer_dingtalk_templates.php

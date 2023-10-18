@@ -1,0 +1,10 @@
+name: DingtalkTemplate
+form: $/summer/dingtalk/models/dingtalktemplatemodel/fields.yaml
+modelClass: Summer\Dingtalk\Models\DingtalkTemplateModel
+defaultRedirect: summer/dingtalk/dingtalktemplate
+create:
+    redirect: 'summer/dingtalk/dingtalktemplate/update/:id'
+    redirectClose: summer/dingtalk/dingtalktemplate
+update:
+    redirect: summer/dingtalk/dingtalktemplate
+    redirectClose: summer/dingtalk/dingtalktemplate

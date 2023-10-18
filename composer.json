@@ -1,0 +1,24 @@
+{
+    "name": "summercms/wn-dingtalk-plugin",
+    "vendor": "summer",
+    "type": "winter-plugin",
+    "description": "Winter CMS dingtalk plugin",
+    "keywords": ["winter", "cms", "dingtalk", "plugin"],
+    "license": "MIT",
+    "homepage": "https://github.com/followzero/wn-dingtalk-plugin",
+    "authors": [
+        {
+            "name": "Summer CMS",
+            "email": "oct38577145@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "summercms/wn-dingtalk-plugin":"plugins/summer/dingtalk"
+        }
+    },
+    "require": {
+        "alibabacloud/dingtalk": "^2.0"
+    }
+}

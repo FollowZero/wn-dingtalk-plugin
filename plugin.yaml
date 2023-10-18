@@ -1,0 +1,24 @@
+plugin:
+    name: 'summer.dingtalk::lang.plugin.name'
+    description: 'summer.dingtalk::lang.plugin.description'
+    author: summer
+    icon: wn-icon-dashcube
+    replaces: {  }
+navigation:
+    main-menu-item-dingtalk:
+        label: 钉钉管理
+        url: summer/dingtalk/dingtalktemplate
+        icon: wn-icon-dashcube
+        sideMenu:
+#            side-menu-item-welcome:
+#                label: 钉钉管理
+#                url: summer/dingtalk/welcome
+#                icon: wn-icon-dashcube
+            side-menu-item-settings:
+                label: 钉钉设置
+                url: system/settings/update/summer/dingtalk/settings
+                icon: icon-gear
+            side-menu-item-template:
+                label: 机器人信息模板
+                url: summer/dingtalk/dingtalktemplate
+                icon: icon-envelope-square

@@ -1,0 +1,124 @@
+fields:
+    title:
+        label: 标题
+        span: auto
+        type: text
+    code:
+        label: 标识
+        span: auto
+        type: text
+    type:
+        label: 类型
+        showSearch: true
+        span: full
+        type: dropdown
+    description:
+        label: 描述
+        size: tiny
+        span: full
+        type: textarea
+    content_text:
+        label: 内容-文本
+        size: large
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleText][sampleLink][sampleActionCard]'
+        type: textarea
+        comment: 以 {{变量名}} 格式选择性覆盖变量
+    content_md:
+        label: 内容-md
+        size: large
+        mode: tab
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleMarkdown]'
+        type: markdown
+        comment: 以 {{变量名}} 格式选择性覆盖变量
+#    content_html:
+#        label: 内容-HTML
+#        size: large
+#        span: full
+#        trigger:
+#            action: show
+#            field: type
+#            condition: 'value[sampleActionCard]'
+#        type: richeditor
+    pic:
+        label: 链接信息封面
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleLink]'
+        type: fileupload
+    photo:
+        label: 图片信息
+        mode: image
+        imageWidth: '200'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleImageMsg]'
+        type: fileupload
+        comment: 图片信息的默认图片
+    message_url:
+        label: 链接地址
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleLink]'
+        type: text
+        comment: 链接消息的链接地址
+    button_type:
+        label: 按钮排列方式
+        options:
+            - 纵向
+            - 横向
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleActionCard]'
+        type: radio
+        default: 0
+        comment: 卡片消息：横向二个按钮时横向生效
+    action_card:
+        label: 卡片信息按钮
+        prompt: 添加按钮
+        minItems: '1'
+        maxItems: '5'
+        style: default
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[sampleActionCard]'
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: 标题
+                    span: auto
+                    type: text
+                url:
+                    label: 链接
+                    span: auto
+                    type: text
